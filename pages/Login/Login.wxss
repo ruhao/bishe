@@ -1,0 +1,102 @@
+.allbody {
+  background-image: url("https://www.laowaicang.com/avatar-bg.png");
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin-top: 30%;
+  height: 100px;
+  width: 216px;
+  text-align: center;
+}
+
+.logo image {
+  height: 100%;
+  width: 100%;
+}
+
+.section {
+  position: relative;
+  margin-top: 20%;
+  text-align: center;
+}
+
+input {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  width: 265px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 10px auto;
+}
+
+.Name {
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  color: white;
+}
+
+.Password {
+  position: absolute;
+  top: 82px;
+  left: 30px;
+  color: white;
+  font-weight: 700;
+}
+
+.Login {
+  width: 120px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 0;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: 20px auto;
+  color: #deb15b;
+  font-size: 18px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.buttom {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  font-size: 18px;
+  text-align: center
+}
+
+.other-button-hover {
+  border: 1px gray solid;
+  box-sizing: border-box;
+}
+
+label {
+  color: white;
+  font-size: 16px;
+}
+
+checkbox {
+  zoom: 75%;
+  position: relative;
+  top: -2px;
+  margin-right: 7px;
+}
+
+button{
+  border: none;
+}
+
+.info{
+  color: red;
+  font-size: 14px;
+}

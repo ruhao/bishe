@@ -1,0 +1,47 @@
+.section {
+  background: #779bab;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.warehouse{
+  margin-top: 50px;
+}
+.warehouselist{
+  width: 650rpx;
+  height: 150rpx;
+  border: 2px solid black;
+  margin: 0 50rpx;
+  border-radius: 16rpx;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#454545), to(rgba(49, 50, 52, 1)));
+  display: flex;
+  margin-top: 50rpx;
+}
+.img{
+  width: 75rpx;
+  height: 75rpx;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: #779bab;
+  margin: 37.5rpx;
+}
+.warehousename{
+  line-height: 150rpx;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.change{
+  z-index: 20;
+  position: absolute;
+  right: 50rpx;
+  line-height: 150rpx;
+  font-size: 16px;
+  background: linear-gradient(to right, gray, red);
+  -webkit-background-clip: text;
+  color: transparent;
+}

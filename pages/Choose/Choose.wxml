@@ -1,0 +1,22 @@
+<view class='section'>
+  <view class='section-top' bindtap='GoToLogistics'>
+    <view class='choose-logistics'>
+      <view class='logistics'>
+        <view class='bg'>
+          <view class='logistics-font'>
+            物流
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='section-bottom'>
+    <view class='choose-inventory' bindtap='GoToInventory'>
+      <view class='inventory'>
+        <view class='bg2'>
+          <view class='inventory-font'>库存</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

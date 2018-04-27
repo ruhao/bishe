@@ -1,0 +1,7 @@
+<view bindtap='Download'>下载</view>
+<view class='Percentage' wx:if='{{Percentage}}'>
+  <view class='pp' style='width:{{ppWidth}}'>{{Percentage}}</view>
+</view>
+<view bindtap='OpenDownload'>查看</view>
+<view bindtap='Upload'>上传</view>
+<image src='{{imgurl}}'></image>

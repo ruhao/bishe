@@ -1,0 +1,20 @@
+<view class='section' bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <view class='topname'>
+    {{name}}
+  </view>
+  <view class='content'>
+    <view class='goodslist' wx:for='{{GoodsList}}'>
+      <view class='img'>
+        <image src='{{item.imgurl}}'></image>
+      </view>
+      <view class='goodsname'>
+        <view>产品名：{{item.Productname}}</view>
+        <view>剩余量：{{item.RemainNum}}</view>
+      </view>
+      <view class='date'>
+        <view>生成日期：{{item.DateOfProduced}}</view>
+        <view>到期日期：{{item.MaturityDate}}</view>
+      </view>
+    </view>
+  </view>
+</view>

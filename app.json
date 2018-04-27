@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/Login/Login",
+    "pages/AdminChange/AdminChange",
+    "pages/LogisticsDetail/LogisticsDetail",
+    "pages/Logistics/Logistics",
+    "pages/AddProduct/AddProduct",
+    "pages/InventoryList/InventoryList",
+    "pages/GoodsList/GoodsList",
+    "pages/Choose/Choose"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "老外仓物流仓储信息表",
+    "navigationBarTextStyle": "black"
+  }
+}

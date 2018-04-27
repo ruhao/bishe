@@ -1,0 +1,10 @@
+<view class='section' bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <view class='warehouse'>
+    <view class='warehouselist' data-AreaOfWarehouse="{{item.AreaOfWarehouse}}" data-warehousename="{{item.name}}" wx:for="{{WarehouseList}}" bindtap='GoToGoodslist'>
+      <view class='img'>
+        <image></image>
+      </view>
+      <view class='warehousename'>{{item.name}}</view>
+    </view>
+  </view>
+</view>

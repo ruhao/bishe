@@ -1,0 +1,73 @@
+<view class='section' bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <view class='section-title'>
+    {{title}}
+  </view>
+  <view class='section-top'>
+    <view class='change'>
+      <view class='img'>
+        <image src='https://www.laowaicang.com/avatar-all123.png' bindtap='addNew'>
+        </image>
+      </view>
+      <view class='changemes'>新增</view>
+    </view>
+    <view class='change'>
+      <view class='img'>
+        <image src='https://www.laowaicang.com/avatar-update123.png' bindtap='UpdateContent'>
+        </image>
+      </view>
+      <view class='changemes'>修改</view>
+    </view>
+    <view class='change'>
+      <view class='img'>
+        <image src='https://www.laowaicang.com/avatar-delete123.png' bindtap='Alldelete'>
+        </image>
+      </view>
+      <view class='changemes'>删除</view>
+    </view>
+  </view>
+  <view class='section-nav'>
+    <view class='shadow'></view>
+  </view>
+  <view class='section-body'>
+  <view class='body-top'>
+    <view class='body-title'>
+      产品列表
+    </view>
+    <view class='body-right' bindtap='GetUpdate'>
+      刷新库存
+    </view>
+    </view>
+    <checkbox-group bindchange="checkboxChange">
+      <view class='ProductList' wx:for='{{ProductList}}'>
+        <view class='imgList'>
+          <image src='{{item.imgurl}}'></image>
+        </view>
+        <view class='date'>
+          <view class='tittname'>{{item.Productname}}</view>
+          <view class='aboutdate'>生产日期：{{item.DateOfProduced}}</view>
+          <view class='aboutdate'>保质期（至）：{{item.MaturityDate}}</view>
+          <view class='aboutdate'>净含量：{{item.weight}}</view>
+          <view class='remainnum'>库存数：{{item.RemainNum}}</view>
+        </view>
+        <view class='checkbox'>
+          <checkbox value="{{id[index].name}}" checked="{{id[index].checked}}" class='checkedboxsize' />
+        </view>
+      </view>
+    </checkbox-group>
+  </view>
+</view>
+<view class='bounced' wx:if='{{show == "open"}}'>
+  <view class='comfirm'>
+    <view class='deletefont'>确定要删除吗？</view>
+    <view class='Issure'>
+      <view class='cancel' bindtap='CancelDelete'>取消</view>
+      <view class='sure' bindtap='SureDelete'>确定</view>
+    </view>
+  </view>
+</view>
+<view class='bounceds' wx:if='{{search == "open"}}'>
+  <view class="searchbg">
+    <input bindinput='Getsearch' class='searchinput' placeholder-class='line-heigt:80rpx'/>
+    <icon type="search" name='search' size="24" class='icon-font' bindtap='SearchType' />
+  </view>
+</view>

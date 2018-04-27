@@ -1,0 +1,67 @@
+<view class='section' bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <view class='top'>
+    <view class="title">
+      <view class='title-font'>
+        第{{GoodsList[0].SerialNumber}}批
+      </view>
+      <view wx:if='{{GoodsList[0].Transportation=="海运"}}' class='Transportation'>
+        <image src='https://www.laowaicang.com/avatar-海运1.png'></image>
+      </view>
+      <view wx:if='{{GoodsList[0].Transportation=="空运"}}' class='Transportation'>
+        <image src='https://www.laowaicang.com/avatar-空运1.png'></image>
+      </view>
+    </view>
+    <view class='prodocttime'>
+      <view wx:if="{{GoodsList[0].OrderTime.length>5}}" class="showtime">
+        下单时间: {{GoodsList[0].OrderTime}}
+      </view>
+      <view wx:if="{{GoodsList[0].DeliveryTime.length>5}}" class="showtime">
+        发货时间: {{GoodsList[0].DeliveryTime}}
+      </view>
+      <view wx:if="{{GoodsList[0].ArrivalTime.length>5}}" class="showtime">
+        到货时间: {{GoodsList[0].ArrivalTime}}
+      </view>
+      <view wx:if="{{GoodsList[0].InspectionDone.length>5}}" class="showtime">
+        报检时间: {{GoodsList[0].InspectionDone}}
+      </view>
+      <view wx:if="{{GoodsList[0].InspectionDonePDF.length>5}}" class="showtime">
+        <!-- <view bindtap='Download' class='Download' wx:if="{{IsLoadDown=='ReadyLoad'}}">下载</view>
+        <view class='Download' wx:if='{{IsLoadDown=="loading"}}'>
+          <view class='pp' style='width:{{ppWidth}}'>{{progress}}%</view>
+        </view> -->
+        <view bindtap='OpenDownload' class='Download'>查看</view>
+      </view>
+      <view wx:if="{{GoodsList[0].TaxTime.length>5}}" class="showtime">
+        缴税时间: {{GoodsList[0].TaxTime}}
+      </view>
+      <view wx:if="{{GoodsList[0].ReleaseTime.length>5}}" class="showtime">
+        放行时间: {{GoodsList[0].ReleaseTime}}
+      </view>
+      <view wx:if="{{GoodsList[0].StorageTime.length>5}}" class="showtime">
+        入库时间: {{GoodsList[0].StorageTime}}
+      </view>
+      <view wx:if="{{GoodsList[0].StorageTime.length>5}}" class="showtime">
+        <view wx:if="{{GoodsList[0].StorageArea}}" class="showtime2">
+          入库地址: {{GoodsList[0].StorageArea}}
+        </view>
+      </view>
+      <view wx:if="{{GoodsList[0].CIQTime.length>5}}" class="showtime">
+        出证时间: {{GoodsList[0].CIQTime}}
+      </view>
+    </view>
+  </view>
+  <!-- 产品列表 -->
+  <view class='productype'>
+  <view class='order'>本次产品订单</view>
+  <view class='clear'>
+    <view wx:for="{{GoodsLists}}" wx:for-item='item' wx:for-index="index" class='shoplist'>
+      <image src='{{GoodsList[0].ProductImage[index]}}'></image>
+      <view class='showcontent'>{{GoodsList[0].ProductType[index]}}</view>
+      <view class='showcontent'>
+        <view>{{item}}</view>
+      </view>
+    </view>
+    </view>
+    <view class='ClilkGetMore' bindtap='GetMore' wx:if="{{MORE=='MORE'}}">点击查看更多</view>
+  </view>
+</view>

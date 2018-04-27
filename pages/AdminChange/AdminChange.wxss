@@ -1,0 +1,233 @@
+.section {
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.AreaOfWarehouse{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+}
+.section-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #bdbdbc;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 10rpx;
+}
+.section-top{
+  height: 151rpx;
+  display: flex;
+  padding-top: 20rpx;
+  padding-bottom: 8px;
+}
+.change{
+  width: 250rpx;
+  text-align: center;
+}
+.img{
+  margin-top: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 85rpx;
+}
+.img image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.changemes{
+  font-size: 14px;
+  margin-top: 8px;
+}
+.section-nav{
+  width: 100%;
+  height: 26rpx;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#cdcdcd), to(rgba(230, 230, 230, 1)));
+  position: relative
+}
+.shadow{
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top:-3px;
+  box-shadow: 0px 6rpx 3rpx #a3a3a2
+}
+.section-body{
+  position: relative;
+  overflow-y: scroll;
+  flex: 1;
+}
+.body-top{
+  display: flex
+}
+.body-title{
+  border-bottom: 1px solid #eeeeee;
+  height: 60rpx;
+  font-size: 14px;
+  line-height: 60rpx;
+  color: #666666;
+  padding-left: 30rpx;
+  position: relative
+}
+.body-right{
+  border-bottom: 1px solid #eeeeee;
+  height: 60rpx;
+  font-size: 14px;
+  line-height: 60rpx;
+  color: #666666;
+  text-align: right;
+  flex: 1;
+  padding-right: 30rpx;
+  position: relative
+}
+ .ProductList{
+  border-bottom: 1px solid #eeeeee;
+  height: 260rpx;
+  font-size: 14px;
+  padding-left: 30rpx;
+  position: relative;
+  margin-top:0;
+  display: flex;
+}
+.imgList{
+  height: 200rpx;
+  width: 200rpx;
+  background: orange;
+  margin: 30rpx 30rpx 30rpx 0;
+  border-radius: 8rpx;
+   overflow: hidden; 
+}
+.imgList image{
+  width: 100%;
+  height: 100%;
+}
+.date{
+  width: 500rpx;
+}
+.checkbox{
+  width: 50rpx;
+  padding-top: 100rpx;
+}
+.checkedboxsize{
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  right: 20rpx;
+}
+.tittname{
+  color: #e0b360;
+  margin-top: 30rpx;
+  font-size: 16px;
+}
+.aboutdate{
+  font-size: 24rpx;
+  color: #666333;
+  line-height: 40rpx;
+}
+.remainnum{
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 8rpx;
+}
+.bounced{
+  height: 100%;
+  z-index: 11;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  top:0;
+  left: 0;
+  background: rgba(230, 230, 230, 0.3)
+}
+.comfirm{
+  height: 400rpx;
+  width: 600rpx;
+  border-radius: 20rpx;
+  position: relative;
+  z-index: 12;
+  background: white;
+  top:25%;
+  left: 75rpx;
+}
+.deletefont{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 160rpx;
+  letter-spacing: 2px;
+  color: #666666
+}
+.Issure{
+  height: 40rpx;
+  position: absolute;
+  bottom: 40rpx;
+  display: flex;
+  font-size: 16px;
+  width: 100%;
+}
+.cancel{
+  width: 140rpx;
+  height: 40rpx;
+  border: solid 1px #e0b360;
+  color: #e0b360;
+  text-align: center;
+  border-radius: 4rpx;
+  position: absolute;
+  left: 60rpx;
+}
+.sure{
+  width: 140rpx;
+  height: 40rpx;
+  border: solid 1px #e0b360;
+  color: white;
+  background: #e0b360;
+  text-align: center;
+  border-radius: 4rpx;
+  position: absolute;
+  right: 60rpx;
+}
+.bounceds{
+  height: 100%;
+  z-index: 11;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  top:0;
+  left: 0;
+  background: rgba(230, 230, 230, 0.7)
+}
+.searchbg{
+  border-radius: 20rpx;
+  position: relative;
+  z-index: 12;
+  background: white;
+  top:25%;
+  left: 75rpx;
+  display: flex;
+  height: 80rpx;
+  width: 600rpx;
+}
+.icon-font{
+  position:absolute;
+  border-bottom-right-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  top:0;
+  right: 0;
+  background:gray;
+  height:60rpx;
+  width:80rpx;
+  color:white;
+  padding-top: 20rpx;
+  text-align: center;
+}
+.searchinput{
+  line-height: 80rpx;
+  padding-left: 20px;
+  padding-top: 15rpx;
+}

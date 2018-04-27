@@ -1,0 +1,38 @@
+<view class='section' bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='wrap'>
+      <view>
+        <view class='uploadimage'>
+          <view class='section__title'>产品图片</view>
+          <view class='image'><image class='image' src='{{imgurl}}'></image></view>
+        </view>
+        <button class='button' bindtap='Upload'>上传图片</button>
+      </view>
+      <view class="DateofProduction">
+        <view class="section__title">产品名称</view>
+        <input name="Productname" value="{{Productname}}"/>
+      </view>
+      <view class="DateofProduction">
+        <view class="section__title">生产日期</view>
+        <input name="DateOfProduced" value="{{DateOfProduced}}"/>
+      </view>
+      <view class="DateofProduction">
+        <view class="section__title">保质期（至）</view>
+        <input name="MaturityDate" value="{{MaturityDate}}"/>
+      </view>
+      <view class="DateofProduction">
+        <view class="section__title">净含量</view>
+        <input name="weight" value="{{weight}}"/>
+      </view>
+      <view class="DateofProduction">
+        <view class="section__title">库存量</view>
+        <input name="RemainNum" value="{{RemainNum}}"/>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button formType="submit" class='submit' wx:if='{{ChangeOrAdd == "Add"}}'>新增</button>
+      <button formType="submit" class='submit' wx:if='{{ChangeOrAdd == "Change"}}'>修改</button>
+    </view>
+  </form>
+  <view></view>
+</view>

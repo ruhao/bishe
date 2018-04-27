@@ -1,0 +1,118 @@
+.section {
+  background: #eee;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  background: white;
+  padding: 0 30rpx;
+  margin: 30rpx;
+  border-radius: 30rpx;
+  display: flex;
+  padding-bottom: 30rpx;
+  height: 480rpx;
+}
+
+.productype {
+  background: white;
+  padding: 0 30rpx;
+  margin: 30rpx;
+  border-radius: 30rpx;
+  overflow-y:scroll; 
+  flex: 1;
+}
+
+.prodocttime {
+  flex: 1;
+  font-size: 10px;
+  padding-top: 110rpx;
+  margin-left: 20rpx;
+}
+
+.title {
+  width: 250rpx;
+}
+
+.title-font {
+  color: #e0b360;
+  margin: 30rpx 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.title image {
+  width: 247rpx;
+  height: 373rpx;
+}
+
+.showtime {
+  text-align: left;
+  line-height: 16px;
+  display: flex;
+  color: #999;
+}
+
+.shoplist {
+  width: 250rpx;
+  float: left;
+  margin: 15px 30rpx;
+  height: 315rpx;
+}
+
+.shoplist image {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.showcontent {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+
+.producttype {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.Download {
+  width: 120rpx;
+  height: 40rpx;
+  border: 1px solid gray;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  margin: 10rpx 0;
+}
+
+.pp {
+  background: greenyellow;
+  height: 20px;
+}
+
+.ClilkGetMore{
+  margin: 20rpx 0 0 0;
+  border-top: 1px solid #eeeeee;
+  text-align: center;
+  font-size: 14px;
+  line-height: 80rpx;
+  color: gray;
+}
+
+.clear{
+  overflow: hidden;
+}
+.order{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #454545;
+  border-bottom: 1px solid #eeeeee;
+}

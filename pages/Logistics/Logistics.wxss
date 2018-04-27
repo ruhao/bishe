@@ -1,0 +1,115 @@
+.section{
+  background: white;
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section-top{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  background: white;
+  top:0;
+  position: relative; 
+  margin-top: 0px;
+}
+.section-top input{
+  line-height: 60px;
+  flex: 1;
+  margin-left: 300rpx;
+  margin-top: 15px;
+}
+.section-top icon{
+  margin-top: 17px;
+  margin-right: 40rpx;
+}
+.section-nav{
+  border-top: 1px solid #cccccc;
+  color: gray;
+  display: flex;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  text-align: center;
+  position: relative
+}
+.section-nav-chance{
+  width: 100%;
+  text-align: center;
+}
+.batch{
+ background: white;
+ border-radius: 30rpx;
+ margin-top: 40rpx; 
+ padding-bottom: 20rpx;
+}
+.products{
+  min-height:100px; 
+}
+.batchNumber{
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  padding:0 40rpx 0;
+  display: flex;
+}
+.Sku{
+  flex: 1;
+  color: #333333;
+  text-align: right;
+}
+.titleNumber{
+  color: #e0b360;
+}
+.GoToDetail{
+  transform: rotate(-90deg);
+  float: right;
+  margin-right: 40px;
+  margin-top: -2px;
+}
+
+.Transportation{
+ padding:0 40rpx 20rpx;
+ width: 630rpx;
+}
+.Transportation image{
+  width: 630rpx;
+  height: 350rpx;
+}
+.section-body{
+  flex: 1;
+  overflow-y:scroll;
+  background: #efefef;
+  padding: 0 30rpx;
+  position: relative;
+}
+.shadow{
+  width: 750rpx;
+  top:0;
+  left: 0;
+  height: 2px;
+  position: absolute;
+  top:-3px;
+  box-shadow: 0px 6rpx 3rpx #a3a3a2;
+}
+.ProductName{
+  margin: 0 30rpx;
+  color: #999999;
+  font-size: 12px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20rpx;
+}
+.konwMore{
+  width: 180rpx;
+  height: 50rpx;
+  background: #e0b360;
+  color: white;
+  line-height: 50rpx;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 12rpx;
+  margin: 20rpx auto 0; 
+}

@@ -1,0 +1,95 @@
+.section {
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-top {
+  height: 50%;
+  background: #343f51;
+  position: relative;
+}
+
+.choose-logistics {
+  width: 600rpx;
+  border: 3px solid #596575;
+  margin: 100rpx 75rpx;
+  min-height: 400rpx;
+}
+
+.choose-inventory {
+  width: 600rpx;
+  border: 3px dotted #596575;
+  margin: 100rpx 75rpx;
+  min-height: 400rpx;
+  border-radius: 50rpx;
+}
+
+.logistics {
+  width: 100px;
+  height: 100px;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ec725d), to(rgba(253, 230, 120, 1)));
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+.inventory{
+  width: 100px;
+  height: 100px;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#0b88a8), to(rgba(57, 210, 120, 1)));
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+}
+.bg {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 5px;
+  background: #343f51;
+}
+.bg2 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 5px;
+  background: #282f3f;
+}
+.logistics-font {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 90px;
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, #ec725d, #fde678);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.inventory-font {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 90px;
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, #0b88a8, #39d2be);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.section-bottom {
+  height: 50%;
+  background: #282f3f;
+  position: relative;
+}

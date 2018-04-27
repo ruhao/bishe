@@ -1,0 +1,59 @@
+.section {
+  height: 100%;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #efefef;
+}
+.DateofProduction{
+  margin-top: 10rpx;
+  display: flex;
+  width: 100%;
+  font-size: 12px;
+  line-height: 35px;
+}
+.section__title{
+  width: 200rpx;
+}
+.wrap{
+  width: 500rpx;
+  margin: 100rpx auto 0;
+}
+input{
+  border: 1px solid #eeeeee;
+  margin-left: 0rpx;
+  background: white;
+  height: 14px;
+}
+.uploadimage{
+  display: flex;
+  width: 100%;
+  font-size: 12px;
+  line-height: 35px;
+  height: 220rpx;
+}
+.image{
+  width: 200rpx;
+  height: 200rpx;
+  background: white;
+}
+.image image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.button{
+  width: 160rpx;
+  height: 50rpx;
+  font-size: 12px;
+  line-height: 50rpx;
+  margin-left: 200rpx;
+}
+.submit{
+  width: 160rpx;
+  height: 50rpx;
+  font-size: 12px;
+  line-height: 50rpx;
+  margin-left: 320rpx;
+}

@@ -1,0 +1,25 @@
+<view class='allbody'>
+  <view class='logo'>
+    <image src="https://www.laowaicang.com/avatar-wxlogo.png"></image>
+  </view>
+  <view class="section">
+    <input placeholder="账   号" value='{{username}}' bindinput='GetNmae' placeholder-style="color:white;font-size:16px" maxlength='12'/>
+    <view class='Name' style='font-weight: 600;'>N</view>
+    <view class='Password'>P</view>
+    <input placeholder="密   码" value='{{password}}' type='password' bindinput='GetPassword' placeholder-style="color:white;font-size:16px" maxlength='12'/>
+    <checkbox-group bindchange="checkboxChange">
+    <label>
+      <checkbox value="checkbox1" checked='true'/> 记住密码
+    </label>
+    </checkbox-group>
+  </view>
+  <view class='buttom'>
+    <view class='Login' hover-class="other-button-hover" bindtap='Login'> 登 入 </view>
+    <view class='info'>
+    {{InformationFeedback}}
+    </view>
+    <button  open-type="contact" plain = 'true' style='border:none;color:white;font-size:16px;position:absolute;right:30px;bottom:30px;'>
+       客服留言
+    </button>
+  </view>
+</view>

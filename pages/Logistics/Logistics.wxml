@@ -1,0 +1,43 @@
+<view class="section" bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <view class="section-top">
+    <input placeholder="老外仓" bindinput='Getsearch' />
+    <icon type="search" name='search' size="24" color='gray' bindtap='SearchType' />
+  </view>
+  <view class='section-nav'>
+    <picker class='section-nav-chance' bindchange="ChangeIsDeliveryTime" value="{{IsDeliveryTimeIndex}}" range="{{IsDeliveryTime}}">
+      <view class="picker">
+        {{IsDeliveryTime[IsDeliveryTimeIndex]}}
+      </view>
+    </picker>
+    <picker wx:if="{{IsDeliveryTimeIndex == '1'}}" class='section-nav-chance' bindchange="ChangeIsInspectionDone" value="{{IsInspectionDone}}" range="{{IsInspectionDone}}">
+      <view class="picker">
+        {{IsInspectionDone[IsInspectionDoneIndex]}}
+      </view>
+    </picker>
+    <picker wx:if="{{IsInspectionDoneIndex == '1'}}" class='section-nav-chance' bindchange="IsStorageTimeIndex" value="{{IsStorageTimeIndex}}" range="{{IsStorageTime}}">
+      <view class="picker">
+        {{IsStorageTime[IsStorageTimeIndex]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section-body">
+  <view class='shadow'></view>
+    <view wx:for="{{ShowData}}" class='batch' wx:for-item='BatchContent' wx:for-index="BatchIndex">
+      <view class='batchNumber'>
+       <view class='titleNumber'>第{{BatchContent.SerialNumber}}批</view>
+       <view class='Sku'>Sku:{{BatchContent.Sku}}</view>
+
+      </view>
+      <view wx:if='{{BatchContent.Transportation=="海运"}}' class='Transportation'>
+        <image src='https://www.laowaicang.com/avatar-海运.png'></image>
+      </view>
+      <view wx:if='{{BatchContent.Transportation=="空运"}}' class='Transportation'>
+        <image src='https://www.laowaicang.com/avatar-空运.png'></image>
+      </view>
+      <view class='ProductName'>
+        本批次产品主要为：{{BatchContent.ProductName}}
+      </view>
+      <view class='konwMore' data-content='{{BatchContent.SerialNumber}}' bindtap='GoToDetail'>更多信息</view>
+    </view>
+  </view>
+</view>

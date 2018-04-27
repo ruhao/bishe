@@ -1,0 +1,12 @@
+/**index.wxss**/
+.Percentage{
+  width: 80px;
+  border: 1px gray solid;
+  border-radius: 10%;
+  height: 20px;
+  font-size: 16px;
+}
+.pp{
+  background: darkgreen;
+  height: 20px;
+}
